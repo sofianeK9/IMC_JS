@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles.css" />
+    <title>IMC</title>
+  </head>
+  <body>
+    <div class="contenu">
+      <h3>Calculez votre IMC :</h3>
+      <p>
+        Il se calcule simplement en divisant le poids (en kg) par le carré de la
+        taille (m). Un IMC normal se situe entre 18,5 et 25. Pour connaître
+        votre IMC, pas besoin de sortir votre calculette, il vous suffit de
+        compléter les champs ci-dessous.
+      </p>
+
+      <label for="taille">Taille en cm :</label>
+      <input type="number" id="taille" />
+      <br />
+      <label for="poids">Poids en kg :</label>
+      <input type="number" id="poids" />
+      <button id="button">Calculer</button>
+
+      <h3 id="resultat" hidden></h3>
+    </div>
+
+    <div class="indication">
+      <table>
+        <thead>
+            <tr> 
+          <th>
+            Indice de masse corporelle (IMC)
+          </th>
+          <th>
+            Interprétation (d'après l'OMS)
+          </th>
+        </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>moins de 18,5</th>
+            <th>Insuffisance pondérale</th>
+          </tr>
+          <tr>
+            <th>18,5 à 25</th>
+            <th>Corpulence normale</th>
+          </tr>
+          <tr>
+            <th>25 à 30</th>
+            <th>Surpoids</th>
+          </tr>
+          <tr>
+            <th>30 à 35</th>
+            <th>Obésité modérée</th>
+          </tr>
+          <tr>
+            <th>35 à 40</th>
+            <th>Obésité sévère</th>
+          </tr>
+          <tr>
+            <th>plus de 40</th>
+            <th>Obésité morbide ou massive</th>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <script src="/index.js"></script>
+  </body>
+</html>
