@@ -1,6 +1,8 @@
-html,
 body {
-    background-color: burlywood;
+    background: linear-gradient(-45deg, #ee9352, #cd883f, #e2b052, #e19317);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    height: 100vh;
 }
 
 .contenu {
@@ -8,13 +10,11 @@ body {
     align-items: center;
     text-align: center;
     flex-direction: column;
-    /* margin-top: 150px; Supprimez cette ligne */
     border-radius: 5px solid black;
     width: 25%;
-    background-color: rgb(187, 152, 104);
+    background-color: rgb(237, 171, 78);
     justify-content: flex-end;
     margin-left: 700px;
-    /* margin-top: 250px; Supprimez cette ligne */
     padding: 10px;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -26,6 +26,7 @@ body {
 
 input {
     text-align: center;
+    font-weight: bold;
 }
 
 button {
@@ -54,7 +55,7 @@ button:hover {
 table {
     width: 100%;
     border-collapse: collapse;
-    margin-top: 10px;
+
 }
 
 th,
@@ -102,11 +103,25 @@ td:nth-child(5) {
 
 th,
 td:nth-child(6) {
-    background-color: #7B241C;
+    background-color: #92352c;
     color: #fff;
 }
 
 th,
 td:nth-child(2n) {
     font-weight: bold;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
 }
